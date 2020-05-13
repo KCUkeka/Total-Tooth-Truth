@@ -1,0 +1,333 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/main_design.css' %}">
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+</head>
+
+<!-- <body> -->
+
+<body style="background-color: rgb(242, 243, 242); w-100">
+    <!-- <style>
+        body {
+            background-image: url({% static 'images/blurred-green.jpg' %});
+            background-size: cover;
+        }
+    </style> -->
+
+
+
+    <!-- First Top Bar  -->
+
+    <div class="d-flex bd-highlight justify-content-around">
+        <div class="container mt-2 p-2 flex-grow-1 bd-highlight">
+            <img class="oral_health img-fluid" src="{% static 'images/oralhealth.png' %}"
+                style="width: 330px; margin-left: 25px;">
+        </div>
+        <div class="container p-2 bd-highlight align-self-end" style="text-align: center;">
+            <h3 style="color: rgb(89, 128, 73);">
+                Welcome to Total Tooth Truth!
+            </h3>
+        </div>
+
+        <div class="container mt-3 p-2 bd-highlight">
+            <div class="d-inline">
+                <!-- <form class="form-inline d-flex justify-content-end" style="margin-right: 30px;">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+                <div class="d-flex justify-content-center">
+                    <h5 style="color: rgba(21, 61,20, 0.726)">Follow Us On</h5>
+                    <a
+                        href="https://twitter.com/oralhealthforum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                        <img class="img-fluid" style="width: 35px;"
+                            src="{% static 'images/twitter-clipart-translucent-4.png' %}">
+                    </a>
+
+                    <a href="https://www.facebook.com/TheOralHealthForum/">
+                        <img class="img-fluid" style="width: 21px;" src="{% static 'images/facebok.png' %}" >
+                    </a>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="nav navebar nav-fill nav-tabs collapse navbar-collapse" id="navbarNav">
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle text-light active "
+                    style="background-color: rgba(50, 98, 50, 0.452); " data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Education Guide
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/guide_k2">K-2nd Grade</a>
+                    <a class="dropdown-item" href="/guide_35">3rd-5th grade</a>
+                    <a class="dropdown-item" href="/guide_68">6th-8th grade</a>
+                    <a class="dropdown-item" href="/guide_high">High School</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" style="background-color: rgba(50, 98, 50, 0.452); "
+                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Post
+                    Tests</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/test_k2">Test for K-2nd Grade</a>
+                    <a class="dropdown-item" href="/test_35">Test for 3rd-5th grade</a>
+                    <a class="dropdown-item" href="/test_68">Test for 6th-8th grade</a>
+                    <a class="dropdown-item" href="/test_high">Test for High School</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" style="background-color:rgba(50, 98, 50, 0.452);"
+                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Videos</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/brushing">Brushing Demo</a>
+                    <a class="dropdown-item" href="/flossing">Flossing Demo</a>
+                    <a class="dropdown-item" href="/field_trip">Total Truth Truth Field Trip</a>
+                </div>
+                </liv>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" style="background-color: rgba(50, 98, 50, 0.452); "
+                    data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Fun
+                    Activities</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/fun_color">Coloring Sheets</a>
+                    <a class="dropdown-item" href="/fun_video">Animated Videos</a>
+                    <a class="dropdown-item" href="/fun_games">Games</a>
+                    <a class="dropdown-item" href="/fun_experiments">Home Experiments</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link active" href="/contact_us"
+                    style="background-color: rgba(50, 98, 50, 0.452); color: white;">Contact
+                    Us</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- End First top bar  -->
+
+
+    <div class="jumbotron text-center"
+        style="padding-bottom:0px; padding-top: 0px; background-color:  rgba(242, 243, 242, 0.952);">
+        <!-- Carosel picture area  -->
+        </ol>
+
+        <!-- Roatating pictures -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            </ol>
+
+            <div class="carousel-inner" style="background-image: url({% static 'images/chalkboard.PNG' %});">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/1.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/2.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/3.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/4.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/5.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/6.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/7.png' %}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- End Roatating picture area  -->
+
+    </div>
+
+
+
+    <!-- end carosel -->
+
+    <!-- 2nd navbar  -->
+
+    <div id="bottom">
+        <ul class="nav navebar sticky-top navbar-light bg-light nav-tabs nav-fill nav-tabs">
+            <li class="nav-item"><a class="nav-link"
+                    href="https://www.heartlandalliance.org/program/oral-health-forum/who-we-are/">Our
+                    Organization</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Additional Resources</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://www.heartlandalliance.org/total-tooth-truth/">Total Tooth
+                        Lesson Plans for Teachers
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+
+        <!-- End 2nd navbar  -->
+
+        <div class="container d-flex justify-content-around mb-3 ">
+            <div class="container  mr-2">
+                <h3 style="color: rgb(89, 128, 73);">The Oral Health Forum</h3>
+                <div>
+                    <img class="img-fluid d-block mb-4" src="{% static 'images/OHF_Staff2020.jpg'%}"
+                        style="width: 463px;">
+                </div>
+                <div style="background: rgba(31, 80, 29, 0.2); width: 467px;">
+
+                    <p style="padding: 12px;">Public health attention to oral health care remains
+                        inadequate as evidenced by prevalence of dental caries and periodontal disease, especially in
+                        low-income communities.
+                        These common oral infections are almost completely preventable with education, effective
+                        self-care
+                        and timely
+                        access to professional oral health intervention.
+                        <br>
+                        <br>
+                        The Oral Health Forum (OHF) works with
+                        the public
+                        health system, key oral health care providers and community leaders to coordinate,
+                        expand, and improve existing oral health resources in health promotion, prevention and
+                        treatment. Find more information by clicking on Our Organization!
+                    </p>
+                </div>
+            </div>
+
+            <div class="container ml-2">
+                <h3 style="color: rgba(89, 128, 73);">Education Guide</h3>
+                <div>
+                    <img class="img-fluid mb-5 d-block w-100" src="{% static 'images/totaltoothtruthpic.png' %} ">
+                </div>
+                <div style="background: rgba(31, 80, 29, 0.2); width: 514px; ">
+                    <p style="padding: 12px;">The Oral Health Forum has exciting news! We have created an online
+                        platform for
+                        schools and communities to access oral health education online. These
+                        presentations
+                        are and informative and interactive way to learn oral health education!
+                        <br>
+                        <br>
+
+                        If you are an educator within a school or administrator,
+                        we have many tools for you to utilize within your own classrooms.
+                        If you would like to use our post tests to integrate into your classroom, we
+                        have an easily accessable tool through Google forms.
+                        <br>
+                        <br>
+                        Please click on the "Contact Us" for more
+                        information about these
+                        resources.
+                    </p>
+                </div>
+            </div>
+            <!-- 
+                <div class="container">
+                    <h3 style="color: rgba(89, 128, 73);">Education Guide</h3>
+                    <h5 style="color: rgba(89, 128, 73);">Total Tooth Truth Presentations</h5>
+                    <div>
+                        <img class="img-fluid mb-3 d-block w-75" src="{% static 'images/totaltoothtruthpic.png' %} ">
+                    </div>
+
+                    <div style="background: rgba(31, 80, 29, 0.2); padding: 12pt;">
+
+
+                        <p>The Oral Health Forum has exciting news! We have created an online platform for
+                            schools and communities to access oral health education online. These
+                            presentations
+                            are and informative and interactive way to learn oral health education!
+                        </p>
+                        <p>
+                            If you are an educator within a school or administrator,
+                            we have many tools for you to utilize within your own classrooms.
+                            If you would like to use our post tests to integrate into your classroom, we
+                            have an
+                            easily accessable
+                            tool through Google forms. Please click on the "Contact Us" for more information about these
+                            resources.
+                        </p>
+                    </div>
+                </div> -->
+
+
+
+        </div>
+
+        <!-- Footer  -->
+        <div class="jumbotron text-center" style="background-color:rgba(21, 61,20, 0.726);" style="margin-bottom:0">
+            <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4" style="margin-left: -147px;">
+                    <p style="color:rgb(242, 243, 242);">Thank You to Our Funders:</p>
+                    <img class="mb-1 d-inline w-200 justify-content-start" src="{% static 'images/Marswrigley.png' %}"
+                        style="width: 150pt;">
+                    <br>
+                    <img class="md-1 d-inline w-200 justify-content-start" src="{% static 'images/sprague.png' %}"
+                        style="width: 200pt;">
+                </div>
+                <div class="col-md-8" style="margin-left: -100px;">
+                    <p class="d-block" style="color:white">A partner of : </p>
+                    <img class="img-fluid mb-3" src="{% static 'images/heartlandalliancelogo.png' %}"
+                        style="width: 100pt;">
+                    <br>
+                    <img class="img-fluid mb-1" src="{% static 'images/oral-health.png'%}" style="width: 250pt;">
+
+                    <p style="color:white; font-size:larger;">1100 West Cermak Road Suite #518</p>
+                    <p style="color:white; font-size: larger;">Chicago, Illinois, 60608</p>
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+</body>
+
+</html>

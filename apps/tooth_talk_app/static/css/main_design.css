@@ -1,0 +1,22 @@
+body {
+/* background-color: rgba(3, 241, 130, 0.698); */
+
+}
+
+.green{
+    color: rgb(31, 126, 31);
+}
+
+.oral_health{
+    width: 390px;
+
+}
+
+.toothbrush{
+    width: 200px;
+    margin-top: -15px;
+}
+
+.col{
+    padding-right: 0px;
+}
