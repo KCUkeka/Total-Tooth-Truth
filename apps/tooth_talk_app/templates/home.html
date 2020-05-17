@@ -3,7 +3,8 @@
 <html lang="en">
 
 <head>
-    <title>Home Page</title>
+    <title>Total Tooth Truth</title>
+    <link rel="shortcut icon" type="img/png" href="https://i.imgur.com/JBAKAYw.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,12 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/main_design.css' %}">
-    <style>
-        .fakeimg {
-            height: 200px;
-            background: #aaa;
-        }
-    </style>
 </head>
 
 <!-- <body> -->
@@ -33,42 +28,34 @@
 
     <!-- First Top Bar  -->
 
-    <div class="d-flex bd-highlight justify-content-around">
-        <div class="container mt-2 p-2 flex-grow-1 bd-highlight">
-            <img class="oral_health img-fluid" src="{% static 'images/oralhealth.png' %}"
-                style="width: 330px; margin-left: 25px;">
-        </div>
-        <div class="container p-2 bd-highlight align-self-end" style="text-align: center;">
-            <h3 style="color: rgb(89, 128, 73);">
-                Welcome to Total Tooth Truth!
-            </h3>
-        </div>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-4">
+                <img class="oral_health img-fluid" src="{% static 'images/oralhealth.png' %}"
+                    style="width: 330px;">
 
-        <div class="container mt-3 p-2 bd-highlight">
-            <div class="d-inline">
-                <!-- <form class="form-inline d-flex justify-content-end" style="margin-right: 30px;">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
-                <div class="d-flex justify-content-center">
-                    <h5 style="color: rgba(21, 61,20, 0.726)">Follow Us On</h5>
-                    <a
-                        href="https://twitter.com/oralhealthforum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                        <img class="img-fluid" style="width: 35px;"
-                            src="{% static 'images/twitter-clipart-translucent-4.png' %}">
-                    </a>
+            </div>
+            <div class="col-sm-6 ">
 
-                    <a href="https://www.facebook.com/TheOralHealthForum/">
-                        <img class="img-fluid" style="width: 21px;" src="{% static 'images/facebok.png' %}" >
-                    </a>
+                <h3 style="color: rgb(89, 128, 73);">
+                    Welcome to Total Tooth Truth!
+                </h3>
+            </div>
+            <div class="col-sm-2">
 
-                    </a>
-                </div>
+                <h5 style="color: rgba(21, 61,20, 0.726)">Follow Us On</h5>
+                <a href="https://twitter.com/oralhealthforum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank">
+                    <img class="img-fluid" style="width: 35px;" src="https://i.imgur.com/0Ba5ahc.png">
+                </a>
+
+                <a href="https://www.facebook.com/TheOralHealthForum/" target="_blank">
+                    <img class="img-fluid" style="width: 21px;" src="{% static 'images/facebok.png' %}">
+                </a>
             </div>
         </div>
-        
-    </div>
 
+            </div>
 
     <div class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
@@ -216,56 +203,61 @@
         <!-- End 2nd navbar  -->
 
         <div class="container d-flex justify-content-around mb-3 ">
-            <div class="container  mr-2">
-                <h3 style="color: rgb(89, 128, 73);">The Oral Health Forum</h3>
-                <div>
-                    <img class="img-fluid d-block mb-4" src="{% static 'images/OHF_Staff2020.jpg'%}"
-                        style="width: 463px;">
-                </div>
-                <div style="background: rgba(31, 80, 29, 0.2); width: 467px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3 style="color: rgb(89, 128, 73);">The Oral Health Forum</h3>
+                        <div>
+                            <img class="img-fluid d-block mb-4" src="{% static 'images/OHF_Staff2020.jpg'%}"
+                                style="width: 467px;">
+                        </div>
 
-                    <p style="padding: 12px;">Public health attention to oral health care remains
-                        inadequate as evidenced by prevalence of dental caries and periodontal disease, especially in
-                        low-income communities.
-                        These common oral infections are almost completely preventable with education, effective
-                        self-care
-                        and timely
-                        access to professional oral health intervention.
-                        <br>
-                        <br>
-                        The Oral Health Forum (OHF) works with
-                        the public
-                        health system, key oral health care providers and community leaders to coordinate,
-                        expand, and improve existing oral health resources in health promotion, prevention and
-                        treatment. Find more information by clicking on Our Organization!
-                    </p>
-                </div>
-            </div>
+                        <div style="background: rgba(31, 80, 29, 0.2); width: 467px;">
+                            <p style="padding: 12px;">Public health attention to oral health care remains
+                                inadequate as evidenced by prevalence of dental caries and periodontal disease,
+                                especially
+                                in
+                                low-income communities.
+                                These common oral infections are almost completely preventable with education, effective
+                                self-care
+                                and timely
+                                access to professional oral health intervention.
+                                <br>
+                                <br>
+                                The Oral Health Forum (OHF) works with
+                                the public
+                                health system, key oral health care providers and community leaders to coordinate,
+                                expand, and improve existing oral health resources in health promotion, prevention and
+                                treatment. Find more information by clicking on Our Organization!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <h3 style="color: rgba(89, 128, 73);">Education Guide</h3>
+                        <div style="width: 550px;">
+                            <img class="img-fluid mb-4 d-block w-100" src="https://i.imgur.com/Xe5cLij.png">
+                        </div>
+                        <div style="background: rgba(31, 80, 29, 0.2); width: 550px; ">
+                            <p style="padding: 12px;">The Oral Health Forum has exciting news! We have created an online
+                                platform for
+                                schools and communities to access oral health education online. These
+                                presentations
+                                are and informative and interactive way to learn oral health education!
+                                <br>
+                                <br>
 
-            <div class="container ml-2">
-                <h3 style="color: rgba(89, 128, 73);">Education Guide</h3>
-                <div>
-                    <img class="img-fluid mb-5 d-block w-100" src="{% static 'images/totaltoothtruthpic.png' %} ">
-                </div>
-                <div style="background: rgba(31, 80, 29, 0.2); width: 514px; ">
-                    <p style="padding: 12px;">The Oral Health Forum has exciting news! We have created an online
-                        platform for
-                        schools and communities to access oral health education online. These
-                        presentations
-                        are and informative and interactive way to learn oral health education!
-                        <br>
-                        <br>
-
-                        If you are an educator within a school or administrator,
-                        we have many tools for you to utilize within your own classrooms.
-                        If you would like to use our post tests to integrate into your classroom, we
-                        have an easily accessable tool through Google forms.
-                        <br>
-                        <br>
-                        Please click on the "Contact Us" for more
-                        information about these
-                        resources.
-                    </p>
+                                If you are an educator within a school or administrator,
+                                we have many tools for you to utilize within your own classrooms.
+                                If you would like to use our post tests to integrate into your classroom, we
+                                have an easily accessable tool through Google forms.
+                                <br>
+                                <br>
+                                Please click on the "Contact Us" for more
+                                information about these
+                                resources.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- 
@@ -303,27 +295,26 @@
         <!-- Footer  -->
         <div class="jumbotron text-center" style="background-color:rgba(21, 61,20, 0.726);" style="margin-bottom:0">
             <div class="container">
-            <div class="row">
-                <div class="col-6 col-md-4" style="margin-left: -147px;">
-                    <p style="color:rgb(242, 243, 242);">Thank You to Our Funders:</p>
-                    <img class="mb-1 d-inline w-200 justify-content-start" src="{% static 'images/Marswrigley.png' %}"
-                        style="width: 150pt;">
-                    <br>
-                    <img class="md-1 d-inline w-200 justify-content-start" src="{% static 'images/sprague.png' %}"
-                        style="width: 200pt;">
-                </div>
-                <div class="col-md-8" style="margin-left: -100px;">
-                    <p class="d-block" style="color:white">A partner of : </p>
-                    <img class="img-fluid mb-3" src="{% static 'images/heartlandalliancelogo.png' %}"
-                        style="width: 100pt;">
-                    <br>
-                    <img class="img-fluid mb-1" src="{% static 'images/oral-health.png'%}" style="width: 250pt;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <p style="color:rgb(242, 243, 242);">Thank You to Our Funders:</p>
+                        <img class="mb-1 d-inline w-200 justify-content-start" src="https://i.imgur.com/XUiRb7d.png"
+                            style="width: 150pt;">
+                        <br>
+                        <img class="md-1 d-inline w-200 justify-content-start" src="https://i.imgur.com/EVnlpVm.png"
+                            style="width: 200pt;">
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="d-block" style="color:white">A partner of : </p>
+                        <img class="img-fluid mb-3" src="https://i.imgur.com/gqjAvSd.png" style="width: 100pt;">
+                        <br>
+                        <img class="img-fluid mb-1" src="{% static 'images/oral-health.png'%}" style="width: 250pt;">
 
-                    <p style="color:white; font-size:larger;">1100 West Cermak Road Suite #518</p>
-                    <p style="color:white; font-size: larger;">Chicago, Illinois, 60608</p>
-                </div>
+                        <p style="color:white; font-size:larger;">1100 West Cermak Road Suite #518</p>
+                        <p style="color:white; font-size: larger;">Chicago, Illinois, 60608</p>
+                    </div>
 
-            </div>
+                </div>
 
             </div>
 

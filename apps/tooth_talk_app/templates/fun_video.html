@@ -4,6 +4,7 @@
 
 <head>
     <title>Animated Videos</title>
+    <link rel="shortcut icon" type="img/png" href="https://i.imgur.com/JBAKAYw.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -28,37 +29,29 @@
 
     <!-- First Top Bar  -->
 
-    <div class="d-flex bd-highlight justify-content-around">
-        <div class="container mt-2 p-2 flex-grow-1 bd-highlight">
-            <img class="oral_health img-fluid" src="{% static 'images/oralhealth.png' %}"
-                style="width: 330px; margin-left: 25px;">
-        </div>
-        <div class="container p-2 bd-highlight align-self-end" style="text-align: center;">
-            <h3 style="color: rgb(89, 128, 73);">
-                Total Tooth Truth
-            </h3>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="oral_health img-fluid" src="{% static 'images/oralhealth.png' %}" style="width: 330px;">
 
-        <div class="container mt-3 p-2 bd-highlight">
-            <div class="d-inline">
-                <!-- <form class="form-inline d-flex justify-content-end" style="margin-right: 30px;">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
-                <div class="d-flex justify-content-center">
-                    <h5 style="color: rgba(21, 61,20, 0.726)">Follow Us On</h5>
-                    <a
-                        href="https://twitter.com/oralhealthforum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                        <img class="img-fluid" style="width: 35px;"
-                            src="{% static 'images/twitter-clipart-translucent-4.png' %}">
-                    </a>
+            </div>
+            <div class="col-sm-6 ">
 
-                    <a href="https://www.facebook.com/TheOralHealthForum/">
-                        <img class="img-fluid" style="width: 21px;" src="{% static 'images/facebok.png' %}" >
-                    </a>
+                <h3 style="color: rgb(89, 128, 73);">
+                    Welcome to Total Tooth Truth!
+                </h3>
+            </div>
+            <div class="col-sm-2">
 
-                    </a>
-                </div>
+                <h5 style="color: rgba(21, 61,20, 0.726)">Follow Us On</h5>
+                <a href="https://twitter.com/oralhealthforum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank">
+                    <img class="img-fluid" style="width: 35px;" src="https://i.imgur.com/0Ba5ahc.png">
+                </a>
+
+                <a href="https://www.facebook.com/TheOralHealthForum/" target="_blank">
+                    <img class="img-fluid" style="width: 21px;" src="{% static 'images/facebok.png' %}">
+                </a>
             </div>
         </div>
 
@@ -120,12 +113,12 @@
                     <a class="dropdown-item" href="/fun_experiments">Home Experiments</a>
                 </div>
             <li class="nav-item">
-                <a class="nav-link active" href="/contact_us" style="background-color: rgba(50, 98, 50, 0.452); color: white;">Contact
+                <a class="nav-link active" href="/contact_us"
+                    style="background-color: rgba(50, 98, 50, 0.452); color: white;">Contact
                     Us</a>
             </li>
         </ul>
     </div>
-
 
     <!-- End First top bar  -->
 
@@ -145,25 +138,28 @@
     <div class="container mb-3" style="margin-top:30px">
         <h3 style="color:seagreen">Animated Videos</h3>
         <h4 style="color:seagreen">Stay tuned for animated videos coming soon!</h4>
-            <div>
-                <img src="{% static 'images/coming-soonlv.jpg' %}" alt="" class="img-fluid w-75 mb-4">
-                <br>
-            </div>
+        <div>
+            <img src="{% static 'images/coming-soonlv.jpg' %}" alt="" class="img-fluid w-75 mb-4">
+            <br>
+        </div>
     </div>
 
 
     <!-- Footer -->
+
     <div class="jumbotron text-center" style="background-color:rgba(21, 61,20, 0.726);" style="margin-bottom:0">
         <div>
             <p style="color:white">A partner of : </p>
-            <img class="img-fluid mb-3" src="{% static 'images/heartlandalliancelogo.png' %}" style="width: 100pt">
+            <img class="img-fluid mb-3" src="https://i.imgur.com/gqjAvSd.png" style="width: 100pt">
             <br>
             <img class="img-fluid mb-1" src="{% static 'images/oral-health.png'%}" style="width: 250pt;">
 
             <p style="color:white; font-size:larger;">1100 West Cermak Road Suite #518</p>
             <p style="color:white; font-size: larger;">Chicago, Illinois, 60608</p>
         </div>
-        <!-- End Footer -->
+
+        <!-- End footer -->
+
 </body>
 
 </html>
